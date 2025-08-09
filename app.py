@@ -128,7 +128,7 @@ def main() -> None:
     parser.add_argument(
         "--minutes",
         type=float,
-        default=10.0,
+        default=30.0,
         help="Duration in minutes.",
     )
     parser.add_argument(
@@ -193,7 +193,7 @@ def main() -> None:
         )
     if args.mode in ("iso", "both"):
         save_wav(
-            os.path.join(args.out, f"theta_{args.theta:g}hz_iso.wav"), iso, sr
+            os.path.join(args.out, f"{args.theta:g}hz_iso.wav"), iso, sr
         )
 
     print("Done.")
