@@ -156,6 +156,7 @@ venv_switcher.py
 summary_tree.txt
 Dev_requirements.txt
 *.exe
+*.wav
 
 # Local cache from the app
 .cache/
