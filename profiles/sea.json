@@ -1,0 +1,11 @@
+{
+  "level": 0.20,
+  "pipeline": [
+    "noise_pink:gain=1",
+    "filter_lp:cut=300,gain=1",
+    "filter_bp:lo=1200,hi=3000,gain=0.35",
+    "env_lfo:f=0.08,depth=0.55,bias=0.45",
+    "env_lfo:f=0.35,depth=0.15,bias=0.85",
+    "stereo_decor:spread=0.02,pan_rate=0.011,pan_depth=0.08"
+  ]
+}

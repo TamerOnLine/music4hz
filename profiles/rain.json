@@ -1,0 +1,9 @@
+{
+  "level": 0.22,
+  "pipeline": [
+    "noise_pink:gain=1", 
+    "filter_hp:cut=2000,gain=0.9",
+    "bursts:density=110,min_ms=5,max_ms=17,amp_lo=0.1,amp_hi=0.5",
+    "stereo_decor:spread=0.02,pan_rate=0.02,pan_depth=0.06"
+  ]
+}
