@@ -61,19 +61,19 @@ python make-tones.py
 ---
 
 ## 📊 Brainwave Bands and Studies
-| Band | Frequency (Hz) | Suggested Duration (min) | Common Use | Studies |
-|------|---------------|--------------------------|------------|---------|
-| **Delta** | 1–3 | 90 | Deep sleep, body repair | [Boutin et al., 2018](https://doi.org/10.3389/fnins.2018.00238) |
-| **Theta** | 4–7 | 45 | Relaxation, daydreaming, creativity | [Kasprzak, 2011](https://doi.org/10.2478/v10068-011-0005-1) |
-| **Alpha** | 8–12 | 30 | Light focus, relaxed alertness | [Jirakittayakorn & Wongsawat, 2017](https://doi.org/10.3389/fnins.2017.00254) |
-| **Beta** | 18 | 20 | Alertness, high concentration, problem-solving | [Lane et al., 1998](https://doi.org/10.1016/S0301-0511(98)00028-8) |
-| **Gamma** | 40 | 15 | Working memory, cognitive processing | [Herrmann et al., 2016](https://doi.org/10.1016/j.tics.2016.01.003) |
-| **Super Gamma** | 110, 120, 136.1, 150, 200 | 10–15 |  
-110 Hz – Deep meditation / creativity  
-120 Hz – Expanded awareness  
-136.1 Hz – "OM frequency" (spiritual traditions)  
-150 Hz – High attention (TMS research)  
-200 Hz – Ultra neural activity | [Lutz et al., 2004](https://doi.org/10.1073/pnas.0407401101) |
+| Band          | Frequency (Hz)                  | Suggested Duration (min) | Common Use                                           | Studies |
+|---------------|---------------------------------|--------------------------|------------------------------------------------------|---------|
+| **Delta**     | 1–3                             | 90                       | Deep sleep, body repair                              | [Boutin et al., 2018](#) |
+| **Theta**     | 4–7                             | 45                       | Relaxation, daydreaming, creativity                  | [Kasprzak, 2011](#) |
+| **Alpha**     | 8–12                            | 30                       | Light focus, relaxed alertness                       | [Jirakittayakorn & Wongsawat, 2017](#) |
+| **Beta**      | 18                              | 20                       | Alertness, high concentration, problem-solving       | [Lane et al., 1998](#) |
+| **Gamma**     | 40                              | 15                       | Working memory, cognitive processing                 | [Herrmann et al., 2016](#) |
+| **Super Gamma** | 110, 120, 136.1, 150, 200     | 10–15                    | See sub-rows below                                   |         |
+| → 110 Hz      |                                 |                          | Deep meditation / creativity                         |         |
+| → 120 Hz      |                                 |                          | Expanded awareness                                   |         |
+| → 136.1 Hz    |                                 |                          | "OM frequency" (spiritual traditions)                |         |
+| → 150 Hz      |                                 |                          | High attention (TMS research)                        |         |
+| → 200 Hz      |                                 |                          | Ultra neural activity                                | [Lutz et al., 2004](#) |
 
 
 > **Note:** Results may vary between individuals; this project is not a substitute for medical advice.
