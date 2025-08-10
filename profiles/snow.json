@@ -1,9 +1,9 @@
 {
-  "level": 0.14,
-  "pipeline": [
-    "noise_pink:gain=1",
-    "filter_lp:cut=900,gain=1",
-    "env_lfo:f=0.03,depth=0.08,bias=0.92",
-    "stereo_decor:spread=0.01,pan_rate=0.008,pan_depth=0.05"
-  ]
+    "level": 0.18,
+    "pipeline": [
+        "noise_pink:gain=0.25",
+        "filter_hp:cut=1500,gain=0.8",
+        "env_lfo:f=0.03,depth=0.3,bias=0.85",
+        "stereo_decor:spread=0.012,pan_rate=0.008,pan_depth=0.1"
+    ]
 }

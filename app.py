@@ -1,9 +1,8 @@
-# app.py
 """
 music4hz — unified CLI (profiles-based BG + tones)
 
 Subcommands:
-  - bg   : Generate ambient backgrounds from JSON profiles (sea, rain, wind, trees, snow, silence)
+  - bg   : Generate ambient backgrounds from JSON profiles (dynamic from profiles folder)
   - tone : Generate brainwave tones (binaural / isochronic / both) via sound.py
 
 Examples:
@@ -13,6 +12,7 @@ Examples:
 
 from __future__ import annotations
 import argparse
+import os
 from pathlib import Path
 
 from bg_utils import SR
@@ -117,12 +117,23 @@ def cmd_tone(args: argparse.Namespace) -> int:
 
 
 # ---------------- CLI ----------------
+def list_profiles(profiles_dir="profiles"):
+    """Return list of available profile names from profiles_dir."""
+    if not os.path.isdir(profiles_dir):
+        return []
+    return [
+        os.path.splitext(f)[0]
+        for f in os.listdir(profiles_dir)
+        if f.lower().endswith(".json")
+    ]
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description="music4hz - ambient (profiles) & brainwave tone generator")
     sub = p.add_subparsers(dest="subcmd", required=False)  # keep False so `python app.py` exits 0 for CI
 
     # bg subcommand (profiles)
-    names = ["sea", "rain", "wind", "trees", "snow", "silence"]
+    names = list_profiles()
     bg = sub.add_parser("bg", help="Generate ambient from JSON profiles")
     bg.add_argument("--name", choices=names, required=True)
     bg.add_argument("--minutes", type=float, default=5.0)
