@@ -70,7 +70,7 @@ for s in sets:
 
         print(f">> Generating {name} ...")
         cmd = [
-            str(python_exe), "app.py",
+            str(python_exe), "sound.py",
             "--mode", "iso",
             "--freq", str(hz),                    # <-- was --theta
             "--minutes", str(minutes[band]),
